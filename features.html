@@ -18,7 +18,7 @@
   <h1>Everything Parts Bin does.</h1>
   <p>If it's on this page, it's in the app. No "coming eventually".</p>
   <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:26px">
-    <a class="pill" href="#inventory">Inventory</a><a class="pill" href="#compartments">Compartments</a><a class="pill" href="#orders">Orders</a><a class="pill" href="#projects">Projects</a><a class="pill" href="#bom">BOM</a><a class="pill" href="#labels">Labels and scanning</a><a class="pill" href="#custom">Custom tabs</a><a class="pill" href="#themes">Themes</a><a class="pill" href="#privacy">Privacy and backups</a>
+    <a class="pill" href="#inventory">Inventory</a><a class="pill" href="#compartments">Compartments</a><a class="pill" href="#orders">Orders</a><a class="pill" href="#projects">Projects</a><a class="pill" href="#bom">BOM</a><a class="pill" href="#ai">Assistant</a><a class="pill" href="#labels">Labels and scanning</a><a class="pill" href="#custom">Custom tabs</a><a class="pill" href="#themes">Themes</a><a class="pill" href="#privacy">Privacy and backups</a>
   </div>
 </div></section>
 
@@ -105,6 +105,38 @@
         <div>3.3V reg,<span style="color:var(--accent2)">C0005</span>,22,Voltage regulator</div>
         <div>USB-C 16p,<span style="color:var(--accent2)">C0004</span>,3,Receptacle</div>
       </div>
+    </div>
+  </div>
+</div></section>
+
+<section class="sec tight bt" id="ai"><div class="wrap">
+  <div class="split">
+    <div class="txt">
+      <span class="kicker">New in V4</span>
+      <h3>The assistant: an AI that can see your inventory and change it.</h3>
+      <p>Open the Assistant tab and chat. It knows every item in your inventory, so it answers from what's actually on your bench. Ask what you're low on, what you can build right now, or what a project idea would still need.</p>
+      <ul>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span><b>Suggest projects</b> buildable from your stock, each with the parts it uses. <b>Recommend parts</b> to round out what you have</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span><b>Create and edit items</b> (name, quantity, drawer, price, link), <b>create and edit projects</b>, and <b>add checklist steps</b>, all from a sentence</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span><b>Apply, don't assume.</b> It never changes anything by itself. Each change shows as a button; tap Apply (or turn on auto-apply) and every change is undoable</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span><b>Memory.</b> It remembers lasting facts about you, your tools and suppliers on its own, and you can give it standing instructions on how to behave</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span><b>Slash commands</b> for the common asks: <code>/projects</code> <code>/parts</code> <code>/low</code> <code>/explain</code> <code>/set</code></span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span><b>Multiple chats</b>, and it can read replies aloud</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span><b>Your choice of model.</b> Bring your own key from a cloud AI provider (stored only on your PC), or run a local model on your machine so nothing leaves it</span></li>
+      </ul>
+      <p style="margin-top:14px;font-size:14px;color:var(--mut)">The assistant is optional and off until you set it up in Settings. Everything else in Parts Bin works without it.</p>
+    </div>
+    <div class="art">
+        <div class="fcard" style="width:100%;max-width:440px">
+          <p style="color:var(--mut);font-size:13px;margin-bottom:12px">Assistant</p>
+          <div style="display:flex;flex-direction:column;gap:10px;font-size:14.5px;line-height:1.5">
+            <div style="align-self:flex-end;background:var(--accent);color:#fff;padding:10px 14px;border-radius:12px;border-bottom-right-radius:4px;max-width:85%">What can I build right now?</div>
+            <div style="align-self:flex-start;background:var(--bg3);border:1px solid var(--line);padding:10px 14px;border-radius:12px;border-bottom-left-radius:4px;max-width:92%"><b>LED desk lamp controller.</b> You have the microcontroller module, the 3.3V regulator, a USB-C jack and 9 of the Rev C boards. The only missing part is the addressable LEDs (0 left). Want a project with the build steps?</div>
+            <div style="align-self:flex-end;background:var(--accent);color:#fff;padding:10px 14px;border-radius:12px;border-bottom-right-radius:4px;max-width:85%">Yes please</div>
+            <div style="align-self:flex-start;background:var(--bg3);border:1px solid var(--line);padding:10px 14px;border-radius:12px;border-bottom-left-radius:4px;max-width:92%">Ready to apply:<div style="margin-top:8px;display:flex;gap:6px;flex-wrap:wrap"><span style="font-size:12px;font-weight:700;padding:5px 9px;border-radius:7px;background:var(--green2);color:#fff">Apply: new project "LED desk lamp"</span><span style="font-size:12px;font-weight:700;padding:5px 9px;border-radius:7px;background:var(--green2);color:#fff">Apply: 4 checklist steps</span></div></div>
+          </div>
+          <p style="color:var(--mut2);font-size:12px;margin-top:12px">Example conversation.</p>
+        </div>
     </div>
   </div>
 </div></section>

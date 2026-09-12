@@ -55,6 +55,7 @@ function header(){
     : `<li><button type="button" aria-haspopup="true">Product ${I.chev}</button>
         <div class="menu">
           <a href="features.html"><span class="mi">${I.grid}</span><div><b>Features</b><span>Inventory, orders, projects, compartments. Everything on the bench.</span></div></a>
+          <a href="features.html#ai"><span class="mi">${I.help}</span><div><b>Assistant</b><span>An AI that sees your inventory and can add, edit and plan for you.</span></div></a>
           <a href="index.html#themes"><span class="mi">${I.palette}</span><div><b>Style presets</b><span>9 presets that rebuild the app. Hover one to preview its colours.</span></div></a>
           <a href="download.html"><span class="mi">${I.download}</span><div><b>Download V4</b><span>Windows. Free. Counting down to release.</span></div></a>
         </div></li>
@@ -80,7 +81,7 @@ function footer(){
       <div class="about"><a class="brand" href="index.html"><img src="assets/img/logo.svg" alt="" width="34" height="34">Parts Bin</a>
         <p>A free, open-source inventory app for makers. Components, filament, PCBs and screws, tracked across the real drawers on your bench. Everything stays on your PC.</p>
         <a class="madeby" href="printlab3d.html"><img src="assets/img/printlab3d.png" alt="" width="28" height="28"><span>Made by <b>PrintLab3D</b></span></a></div>
-      <div><h5>Product</h5><a href="features.html">Features</a><a href="index.html#themes">Style presets</a><a href="index.html#versions">Versions</a><a href="download.html">Download V4</a></div>
+      <div><h5>Product</h5><a href="features.html">Features</a><a href="features.html#ai">Assistant</a><a href="index.html#themes">Style presets</a><a href="index.html#versions">Versions</a><a href="download.html">Download V4</a></div>
       <div><h5>Support</h5><a href="support.html#bugs">Report a bug</a><a href="support.html#install">Install tutorial</a><a href="support.html#faq">FAQ</a><a href="${LINKS.discord}" target="_blank" rel="noopener">Discord</a><a href="${LINKS.mail}">Email</a></div>
       <div><h5>Content</h5><a href="printlab3d.html">Videos</a><a href="${LINKS.youtube}" target="_blank" rel="noopener">YouTube</a><a href="${LINKS.tiktok}" target="_blank" rel="noopener">TikTok</a><a href="${LINKS.githubOrg}" target="_blank" rel="noopener">GitHub</a></div>
       <div><h5>Open source</h5><a href="${LINKS.github}" target="_blank" rel="noopener">Source code</a><a href="${LINKS.issues}" target="_blank" rel="noopener">Issues</a><a href="${LINKS.github}#readme" target="_blank" rel="noopener">Readme</a></div>
@@ -137,6 +138,7 @@ const INDEX=[
   {k:"Page",t:"Download",s:"V4 for Windows, counting down",h:"download.html"},
   {k:"Page",t:"Support",s:"Report a bug, install tutorial, FAQ",h:"support.html"},
   {k:"Page",t:"Content",s:"PrintLab3D videos, YouTube and TikTok",h:"printlab3d.html"},
+  {k:"Feature",t:"Assistant (AI)",s:"Sees your inventory, suggests projects, creates and edits items for you",h:"features.html#ai"},
   {k:"Feature",t:"Inventory",s:"Part IDs, photos, drawer location, stock steppers",h:"features.html#inventory"},
   {k:"Feature",t:"Compartments",s:"Map shelves and drawer cabinets, link parts to drawers",h:"features.html#compartments"},
   {k:"Feature",t:"Orders",s:"Track incoming orders, auto-receive into stock",h:"features.html#orders"},
