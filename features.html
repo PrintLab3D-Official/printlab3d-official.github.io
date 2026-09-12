@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Features, Parts Bin</title>
+<meta name="description" content="Every feature in Parts Bin V4: inventory with drawer locations, reorder links, packs and units, orders that restock themselves, projects, compartments, BOM import and export, labels and scanning, 16 themes and local-only storage.">
+<meta name="theme-color" content="#0d1117">
+<link rel="icon" href="favicon.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body data-page="features">
+
+<section class="phero"><div class="wrap">
+  <span class="kicker">Features</span>
+  <h1>Everything Parts Bin does.</h1>
+  <p>If it's on this page, it's in the app. No "coming eventually".</p>
+  <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:26px">
+    <a class="pill" href="#inventory">Inventory</a><a class="pill" href="#compartments">Compartments</a><a class="pill" href="#orders">Orders</a><a class="pill" href="#projects">Projects</a><a class="pill" href="#bom">BOM</a><a class="pill" href="#labels">Labels and scanning</a><a class="pill" href="#custom">Custom tabs</a><a class="pill" href="#themes">Themes</a><a class="pill" href="#privacy">Privacy and backups</a>
+  </div>
+</div></section>
+
+<section class="sec tight" id="inventory"><div class="wrap">
+  <div class="split">
+    <div class="txt rv">
+      <span class="kicker">Inventory</span>
+      <h3>One card per part. Everything you'd want on it.</h3>
+      <p>Each item gets an auto ID (<code>C-0001</code> for components, <code>F-</code> filament, <code>P-</code> PCBs, <code>S-</code> screws), a photo, its drawer, unit price, supplier part code and a stock counter you can nudge with the plus and minus buttons.</p>
+      <ul>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span><b>Five live stats:</b> items, total units, low stock, out of stock, inventory value</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span><b>Search</b> by name, ID, location or barcode; sort and filter by status</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span><b>Packs and units.</b> A bag of 100 counts as 1 pack <i>and</i> 100 units, so "1.84 packs · 184 units" is exactly right</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span><b>Low and out-of-stock</b> banners on the card, a per-item threshold, and optional in-app notifications</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span><b>Filament is first-class:</b> material, diameter, colour swatch, spool weight</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span><b>Reorder in one click.</b> The green Buy button opens the supplier page you saved on the part</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span><b>Compact list view</b> (new in V4): one dense row per part with the same steppers and a one-click reorder button</span></li>
+      </ul>
+    </div>
+    <div class="art rv d1">
+      <div class="pcard">
+        <div class="ph"><div class="ex"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="9" cy="10" r="2"/><path d="m21 16-5-5-8 8"/></svg>Example image</div><span class="pid">C-0001</span></div>
+        <div class="bd">
+          <div class="nm">100nF 0603 capacitor</div>
+          <div class="chips"><span class="chip"><b>C-0001</b></span><span class="chip">component</span><span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M3 15h18M9 3v18M15 3v18"/></svg><b>Drawer 6x3 · #4</b></span><span class="chip">$0.01 ea</span></div>
+          <div class="qty"><b>50</b> in stock<span class="st"><i>−</i><i>+</i></span></div>
+          <div class="row"><span class="buy"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/><path d="M2 3h2l2.3 11.4a2 2 0 0 0 2 1.6h8.2a2 2 0 0 0 2-1.6L21 7H6"/></svg>Buy at Example</span><span class="ib"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.6 13.4l-7.2 7.2a2 2 0 0 1-2.8 0L3 13V3h10l7.6 7.6a2 2 0 0 1 0 2.8z"/><circle cx="7.5" cy="7.5" r="1.3"/></svg></span><span class="ib"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z"/></svg></span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></section>
+
+<section class="sec tight bt" id="compartments"><div class="wrap">
+  <div class="split rev">
+    <div class="txt rv">
+      <span class="kicker">Compartments</span>
+      <h3>Map the real drawers. Then never lose a part again.</h3>
+      <p>Add a storage unit, say "Drawer cabinet 6x3, bench left", and Parts Bin draws it as a grid. Click a drawer, pick a part, done. From then on the part's card reads <b>Drawer cabinet 6x3 · #18</b>, search matches on it, and the scanner can point you to it.</p>
+      <ul>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Any rows by columns; label empty drawers or link them to items</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Stats for storage units, total drawers and drawers filled</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Free-text locations too ("Shelf B") with autocomplete</span></li>
+      </ul>
+    </div>
+    <div class="art rv d1">
+      <div class="fcard" style="width:100%;max-width:420px"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M3 15h18M9 3v18M15 3v18"/></svg></div><h3>Drawer cabinet 6x3</h3><p style="margin-bottom:14px">Bench left · 3 by 6 · 18 drawers</p>
+        <div style="display:grid;grid-template-columns:repeat(6,1fr);gap:6px">
+          <i style="aspect-ratio:1;border-radius:7px;background:var(--bg3);border:1px solid var(--line)"></i><i style="aspect-ratio:1;border-radius:7px;background:var(--accent);opacity:.9"></i><i style="aspect-ratio:1;border-radius:7px;background:var(--bg3);border:1px solid var(--line)"></i><i style="aspect-ratio:1;border-radius:7px;background:var(--accent);opacity:.9"></i><i style="aspect-ratio:1;border-radius:7px;background:var(--bg3);border:1px solid var(--line)"></i><i style="aspect-ratio:1;border-radius:7px;background:var(--bg3);border:1px solid var(--line)"></i>
+          <i style="aspect-ratio:1;border-radius:7px;background:var(--accent);opacity:.9"></i><i style="aspect-ratio:1;border-radius:7px;background:var(--bg3);border:1px solid var(--line)"></i><i style="aspect-ratio:1;border-radius:7px;background:var(--accent);opacity:.9"></i><i style="aspect-ratio:1;border-radius:7px;background:var(--bg3);border:1px solid var(--line)"></i><i style="aspect-ratio:1;border-radius:7px;background:var(--bg3);border:1px solid var(--line)"></i><i style="aspect-ratio:1;border-radius:7px;background:var(--accent);opacity:.9"></i>
+          <i style="aspect-ratio:1;border-radius:7px;background:var(--bg3);border:1px solid var(--line)"></i><i style="aspect-ratio:1;border-radius:7px;background:var(--bg3);border:1px solid var(--line)"></i><i style="aspect-ratio:1;border-radius:7px;background:var(--accent);opacity:.9"></i><i style="aspect-ratio:1;border-radius:7px;background:var(--bg3);border:1px solid var(--line)"></i><i style="aspect-ratio:1;border-radius:7px;background:var(--bg3);border:1px solid var(--line)"></i><i style="aspect-ratio:1;border-radius:7px;background:var(--accent);opacity:.9"></i>
+        </div></div>
+    </div>
+  </div>
+</div></section>
+
+<section class="sec tight bt" id="orders"><div class="wrap">
+  <div class="grid2">
+    <div class="fcard rv"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h11v9H3zM14 10h4l3 3v3h-7z"/><circle cx="7" cy="18.5" r="1.6"/><circle cx="17.5" cy="18.5" r="1.6"/></svg></div><h3>Orders</h3><p>An order holds several products with quantities, prices and destination drawers, plus a tracking number and expected date. When the box arrives, mark it and every line is added to inventory (or merged into an existing part) in one go. Turn on <b>auto-receive</b> and it happens on the expected date by itself. Arrived orders can auto-archive.</p></div>
+    <div class="fcard rv d1" id="projects"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="4" width="14" height="17" rx="2"/><path d="M9 4V3h6v1M9 11h6M9 15h4"/></svg></div><h3>Projects</h3><p>Give a project a description, photos and a checklist with a progress bar. Allocate the parts it needs and they're taken out of stock; delete the project and they go back. Each card shows the project's total parts cost. Finished projects can auto-archive.</p></div>
+  </div>
+</div></section>
+
+<section class="sec tight bt" id="bom"><div class="wrap">
+  <div class="split">
+    <div class="txt rv">
+      <span class="kicker v">New in V4</span>
+      <h3>Parts list in. Order-ready file out.</h3>
+      <p>Export the parts list (BOM) from your PCB design tool, pick it in Parts Bin, review every row (add a buy link or photo), and Done adds them all as new items. Or drop them into an Order instead, so they only count once they arrive.</p>
+      <ul>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Import <code>.xlsx</code> or <code>.csv</code></span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Export an <b>order-ready CSV</b> keyed on the supplier part code, ready to upload to your board house</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Or a <b>full CSV</b> of every field for spreadsheets and backups</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Scope: the current filtered view or the whole library. Items with no part code are counted and reported, never silently dropped</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Exports are read-only. They never change your data</span></li>
+      </ul>
+    </div>
+    <div class="art rv d1">
+      <div class="fcard" style="width:100%;max-width:420px;font-family:var(--mono);font-size:13px;line-height:1.8">
+        <p style="color:var(--mut);margin-bottom:6px;font-family:var(--font)">parts-bin-bom-2026-09-20.csv</p>
+        <div style="color:var(--txt)">Comment,Part #,Quantity,Description</div>
+        <div>100nF 0603,<span style="color:var(--accent2)">C0001</span>,50,Ceramic capacitor</div>
+        <div>10K 0805,<span style="color:var(--accent2)">C0002</span>,50,Resistor 1%</div>
+        <div>3.3V reg,<span style="color:var(--accent2)">C0005</span>,22,Voltage regulator</div>
+        <div>USB-C 16p,<span style="color:var(--accent2)">C0004</span>,3,Receptacle</div>
+      </div>
+    </div>
+  </div>
+</div></section>
+
+<section class="sec tight bt" id="labels"><div class="wrap">
+  <div class="fgrid" style="margin-top:0">
+    <div class="fcard rv"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9V3h12v6"/><rect x="3" y="9" width="18" height="8" rx="1"/><path d="M6 14h12v7H6z"/></svg></div><h3>Print labels</h3><p>Barcode labels in small, medium or large for drawers, bags and spools. Select a few items, or the whole view, and hit Print labels.</p></div>
+    <div class="fcard rv d1"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7V5a1 1 0 0 1 1-1h2M17 4h2a1 1 0 0 1 1 1v2M20 17v2a1 1 0 0 1-1 1h-2M7 20H5a1 1 0 0 1-1-1v-2"/><path d="M4 12h16"/></svg></div><h3>Scan to find</h3><p>Point your webcam at a label (or type its code) and Parts Bin jumps straight to that part and tells you which drawer it's in. Scanning runs on your PC, not in the cloud.</p></div>
+    <div class="fcard rv d2"><span class="tag">NEW IN V4</span><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2"/><path d="M8 6h8M8 10h.01M12 10h.01M16 10h.01M8 14h.01M12 14h.01M16 14h.01M8 18h4"/></svg></div><h3>Calculator</h3><p>A floating calculator that does maths and live currency conversion, so you can price an order without leaving the app.</p></div>
+    <div class="fcard rv"><span class="tag">NEW IN V4</span><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 7 2 2 4-4"/><path d="m3 15 2 2 4-4"/><path d="M13 6h8M13 14h8"/></svg></div><h3>Daily tasks</h3><p>A small planner for what you're doing on the bench today. Because "solder the thing" lives next to the parts for the thing.</p></div>
+    <div class="fcard rv d1" id="custom"><span class="tag">NEW IN V4</span><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h16M4 18h10"/></svg></div><h3>Custom tabs</h3><p>Add your own sidebar tabs, each with an image and its own ID prefix (Stencils becomes <code>T-0001</code>). Hide any built-in tab you don't use; items stay in the library and still show under All.</p></div>
+    <div class="fcard rv d2"><span class="tag">NEW IN V4</span><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09a1.65 1.65 0 0 0-1-1.51 1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09a1.65 1.65 0 0 0 1.51-1 1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg></div><h3>Settings in tabs</h3><p>General, Appearance, Sidebar tabs, Materials and locations, Notifications, Data and backup, Updates. Your name and greeting, currency symbol, default low-stock threshold, density, resizable sidebar.</p></div>
+  </div>
+</div></section>
+
+<section class="sec tight bt" id="themes"><div class="wrap">
+  <div class="shead">
+    <h2 class="t rv">9 style presets. 16 themes. Your accent, your font.</h2>
+    <p class="rv d1">Presets rebuild the whole app: fonts, edges, backgrounds. Themes recolour it. Pick a base, override the accent with any hex colour, change the font, and choose comfortable or compact density. Hover a preset to see its colours on this site.</p>
+  </div>
+  <div class="pgrid rv d1" id="pgrid"></div>
+  <p style="margin-top:22px;color:var(--mut);font-size:14.5px">The 16 colour themes: Dark, Light, Paper, Snow, Mint, Sakura, Midnight, Ocean, Forest, Rose, Amber, Grape, Dracula, Nord, Sunset, Cyber.</p>
+</div></section>
+
+<section class="sec tight bt" id="privacy"><div class="wrap">
+  <div class="center">
+    <span class="kicker g rv">Privacy and backups</span>
+    <h2 class="t rv d1">Your data never leaves your PC.</h2>
+    <p class="sub rv d2">There is no server. There is no account. Parts Bin can't upload your inventory because there's nowhere for it to go.</p>
+  </div>
+  <div class="fgrid">
+    <div class="fcard rv"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div><h3>Saved on this PC</h3><p>V4 stores everything in the app's own private storage. It survives restarts and updates.</p></div>
+    <div class="fcard rv d1"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7v6h6"/><path d="M3.5 13a9 9 0 1 0 2.1-9.4L3 7"/></svg></div><h3>Recovery snapshot</h3><p>Every save also writes a hidden recovery copy. If the main store ever comes back empty, the snapshot restores itself.</p></div>
+    <div class="fcard rv d2"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M6 11l6 6 6-6"/><path d="M4 21h16"/></svg></div><h3>Backup to file</h3><p>Settings, Data and backup, Backup to file. Move your inventory to another PC or keep a spare copy. Restore from the same screen.</p></div>
+    <div class="fcard rv"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="11" width="16" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg></div><h3>PIN lock</h3><p>An optional 4-digit PIN, with "require when the app opens". A casual lock so others can't just open it. Stored on this PC only.</p></div>
+    <div class="fcard rv d1"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-6.2-8.6"/><path d="M21 3v6h-6"/></svg></div><h3>Automatic updates</h3><p>V4 checks for signed updates and installs them in place. Your data isn't touched.</p></div>
+    <div class="fcard rv d2"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 18l6-6-6-6M8 6l-6 6 6 6"/></svg></div><h3>Open source</h3><p>Plain HTML, CSS and JavaScript inside a small native shell. Read every line on GitHub.</p></div>
+  </div>
+</div></section>
+
+<section class="sec tight"><div class="wrap">
+  <div class="band rv">
+    <h2>Ready when V4 is.</h2>
+    <p>Windows 10 and 11. Free. No account. Counting down to 20 September.</p>
+    <div class="ctas"><a class="btn btn-green btn-lg" href="download.html">Go to Download</a><a class="btn btn-ghost btn-lg" href="support.html#install">Install tutorial</a></div>
+  </div>
+</div></section>
+
+<script src="assets/js/site.js"></script>
+</body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Parts Bin Support</title>
+<meta name="description" content="Parts Bin support: report a bug on Discord, the install tutorial, what to do if you forget your PIN, and answers to common questions.">
+<meta name="theme-color" content="#0d1117">
+<link rel="icon" href="favicon.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body data-page="support">
+
+<section class="shero"><div class="wrap">
+  <h1>How can we help?</h1>
+  <p>Parts Bin is made by one person, so you'll usually be talking to the maker.</p>
+  <button class="sbar" type="button" onclick="document.getElementById('srchBtn').click()"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><span>Search help: "PIN", "install", "backup", "Mac"</span><kbd>/</kbd></button>
+</div></section>
+
+<section class="sec tight"><div class="wrap">
+  <div class="topics">
+    <a class="topic" href="#bugs"><span class="ti" style="background:#5865F2"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2l1.9 1.9M16 2l-1.9 1.9M9 7h6a3 3 0 0 1 3 3v4a6 6 0 0 1-12 0v-4a3 3 0 0 1 3-3z"/><path d="M3 13h3M18 13h3M4 20l3-2M20 20l-3-2M4 6l3 2M20 6l-3 2"/></svg></span><b>Report a bug</b><span>Something broken? Post it on Discord with the template.</span></a>
+    <a class="topic" href="#install"><span class="ti" style="background:#16a34a"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M6 11l6 6 6-6"/><path d="M4 21h16"/></svg></span><b>Install tutorial</b><span>Step by step, including the Windows warning.</span></a>
+    <a class="topic" href="#pin"><span class="ti" style="background:#f59e0b"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="11" width="16" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg></span><b>Forgot your PIN?</b><span>Reset it with your Windows password. Nothing is lost.</span></a>
+    <a class="topic" href="#faq"><span class="ti" style="background:#3b82f6"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9.1 9.5a3 3 0 0 1 5.8 1c0 2-3 2.5-3 4"/><path d="M12 17.5h.01"/></svg></span><b>FAQ</b><span>Privacy, backups, Mac and Linux, the BOM export.</span></a>
+  </div>
+
+  <div class="docs">
+    <nav class="side" aria-label="On this page">
+      <h6>Help</h6>
+      <a href="#bugs">Report a bug</a>
+      <a href="#features">Request a feature</a>
+      <a href="#install">Install tutorial</a>
+      <a href="#smartscreen">The Windows warning</a>
+      <a href="#pin">Forgot your PIN</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+      <h6>Elsewhere</h6>
+      <a href="https://discord.gg/n8M3V4SaHJ" target="_blank" rel="noopener">Discord</a>
+      <a href="https://github.com/PrintLab3D-Official/Part-bin" target="_blank" rel="noopener">Source code</a>
+      <a href="mailto:PrintLab3D@outlook.com.au">Email</a>
+    </nav>
+    <article>
+
+      <section id="bugs">
+        <h2>Report a bug</h2>
+        <p>Bugs are reported on the Parts Bin Discord. It's free to join, the maker reads it, and you'll usually get a reply the same day. A good report means it gets fixed faster.</p>
+        <h3>Before you post</h3>
+        <ul>
+          <li>Make sure you're on the latest version. Settings, Updates shows your version and checks for a newer one.</li>
+          <li>If it's about your data, back it up first: Settings, Data and backup, Backup to file. Then try again.</li>
+          <li>Have a quick look at recent posts. If someone already reported it, reply there with your details instead.</li>
+        </ul>
+        <h3>What to include</h3>
+        <ul>
+          <li><b>Version.</b> From Settings, Updates (for example "V4.1").</li>
+          <li><b>What you did.</b> The exact clicks, in order. "Opened Orders, clicked Mark arrived on an order with 3 lines."</li>
+          <li><b>What you expected.</b> "The 3 items should be added to stock."</li>
+          <li><b>What happened instead.</b> "Only the first item was added." Copy any error text word for word.</li>
+          <li><b>A screenshot</b> if you can. Windows key + Shift + S takes one; paste it straight into Discord.</li>
+          <li><b>Does it happen every time?</b> Or only once?</li>
+        </ul>
+        <div class="dc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.3 3.8 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.8a2 2 0 0 0-3.4 0z"/><path d="M12 9v4M12 17h.01"/></svg><div><b>Don't post your backup file in a public channel.</b> It has your whole inventory in it. If the maker needs it, they'll ask you to send it in a direct message.</div></div>
+        <p>Copy this, fill it in, and paste it in Discord:</p>
+        <div class="tmpl"><button class="btn btn-ghost btn-sm cp" data-copy="prev">Copy</button>Version: V4.x
+What I did:
+1.
+2.
+3.
+What I expected:
+What happened instead:
+Every time, or just once?
+Screenshot: (paste below)</div>
+        <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:16px">
+          <a class="btn" style="background:#5865F2;color:#fff" href="https://discord.gg/n8M3V4SaHJ" target="_blank" rel="noopener">Report it on Discord</a>
+          <a class="btn btn-ghost" href="mailto:PrintLab3D@outlook.com.au?subject=Parts%20Bin%20bug">Or email it</a>
+        </div>
+      </section>
+
+      <section id="features">
+        <h2>Request a feature</h2>
+        <p>Same place: post it on Discord. Explain the problem you're trying to solve, not just the button you want. "I keep forgetting which spools are dry" is more useful than "add a dry checkbox".</p>
+        <a class="btn btn-ghost" href="https://discord.gg/n8M3V4SaHJ" target="_blank" rel="noopener">Suggest it on Discord</a>
+      </section>
+
+      <section id="install">
+        <h2>Install tutorial</h2>
+        <p>Parts Bin V4 is a normal Windows installer. No admin rights, no account, and it takes about a minute.</p>
+        <ol class="steps" style="margin-top:18px">
+          <li><div><b>Download the installer</b><span>From the <a href="download.html">Download page</a> once V4 is out. It's a single .exe file.</span></div></li>
+          <li><div><b>Run the .exe</b><span>Double-click it in your Downloads folder. It installs for the current user only, so you won't get an administrator prompt.</span></div></li>
+          <li><div><b>Get past the blue box</b><span>Windows may show "Windows protected your PC". Click <b>More info</b>, then <b>Run anyway</b>. This is explained <a href="#smartscreen">below</a>.</span></div></li>
+          <li><div><b>Click through the installer</b><span>Next, Install, Finish. You can change the install folder if you want; the default is fine.</span></div></li>
+          <li><div><b>Open Parts Bin</b><span>There's a Parts Bin icon on your Desktop and in the Start menu. First launch shows a short tour of what's new in V4. Drag the slider on the last slide to finish it.</span></div></li>
+          <li><div><b>Set it up</b><span>Open Settings (bottom of the sidebar). Set your currency symbol, your default low-stock threshold, and, if you like, your name for the greeting. Everything else can wait.</span></div></li>
+          <li><div><b>Bring your V3 data across (optional)</b><span>In V3: Settings, Backup to file. In V4: Settings, Data and backup, Restore, pick that file. Items, projects, orders, compartments and settings all come across. V3 stays installed and untouched until you remove it.</span></div></li>
+        </ol>
+        <h3>Updating later</h3>
+        <p>V4 checks for updates on its own and tells you when one is ready. Settings, Updates lets you check by hand. Updates never touch your data.</p>
+        <h3>Uninstalling</h3>
+        <p>Windows Settings, Apps, Installed apps, find Parts Bin, Uninstall. Back up first if you want to keep your inventory.</p>
+      </section>
+
+      <section id="smartscreen">
+        <h2>The "Windows protected your PC" warning</h2>
+        <div class="callout">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.3 3.8 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.8a2 2 0 0 0-3.4 0z"/><path d="M12 9v4M12 17h.01"/></svg>
+          <div><b>This is normal and safe.</b> Windows shows the blue SmartScreen box for any app that hasn't been code-signed with a paid certificate, which small free projects usually skip. It is not a virus warning. Click <b>More info</b>, then <b>Run anyway</b>. You only see it once.</div>
+        </div>
+        <p style="margin-top:14px">If a downloaded file seems blocked before you even run it: right-click the file, Properties, tick <b>Unblock</b> at the bottom, OK. If you'd rather not run an unsigned installer at all, the full source is on GitHub and you can build it yourself.</p>
+      </section>
+
+      <section id="pin">
+        <h2>Forgot your PIN?</h2>
+        <p>First, the important part: <b>your data is not lost.</b> The PIN is a casual lock on the app window. It does not encrypt anything, so everything you entered is still sitting safely on your PC.</p>
+        <h3>Use the Reset button on the lock screen</h3>
+        <ol>
+          <li>On the PIN screen, click <b>Reset PIN</b>.</li>
+          <li>Windows asks you to confirm it's you: type the <b>password you use to sign in to this computer</b> (or use your fingerprint or face if you have Windows Hello). Parts Bin never sees or stores this; it's the standard Windows prompt.</li>
+          <li>The lock is switched off and the app opens with everything exactly as you left it. Set a new PIN in Settings whenever you like.</li>
+        </ol>
+        <p>That's the only way past a forgotten PIN by design: someone who can't sign in to your Windows account can't get past it either.</p>
+        <h3>If the Reset button doesn't work for you</h3>
+        <p>If you have a backup file (Settings, Data and backup, Backup to file), uninstall Parts Bin, reinstall it and use Restore. Otherwise message on <a href="https://discord.gg/n8M3V4SaHJ" target="_blank" rel="noopener">Discord</a> or <a href="mailto:PrintLab3D@outlook.com.au?subject=Forgot%20my%20Parts%20Bin%20PIN">email</a> and the maker will walk you through it.</p>
+      </section>
+
+      <section id="faq">
+        <h2>FAQ</h2>
+        <div class="faq">
+          <details open><summary>Is my inventory uploaded anywhere?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></summary><div class="a">No. There is no server and no account. Everything is saved in the app's own private storage on your PC, with a hidden recovery snapshot written on every save. The only times Parts Bin talks to the internet are checking for updates and opening a Buy link you saved.</div></details>
+          <details><summary>Is it free? Will V4 cost money?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></summary><div class="a">Free and open source. Every version so far has been, and V4 is the same. The code is on GitHub.</div></details>
+          <details><summary>When is V4 out?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></summary><div class="a">20 September. There's a countdown on the <a href="index.html">home page</a>. The release will be announced on <a href="https://discord.gg/n8M3V4SaHJ" target="_blank" rel="noopener">Discord</a> and <a href="https://www.youtube.com/@PrintLab3D000" target="_blank" rel="noopener">YouTube</a>, and the Download page switches over that day.</div></details>
+          <details><summary>Mac or Linux?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></summary><div class="a">V4 is Windows-only at launch. macOS and Linux builds are possible and are on the list. Parts Bin is built by one person, so the more support it gets (Discord, YouTube, GitHub stars, people actually using it) the sooner they can happen. Say so in Discord if you'd use one.</div></details>
+          <details><summary>How do I move my data to a new PC, or from V3 to V4?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></summary><div class="a">Settings, <b>Data and backup</b>, <b>Backup to file</b> saves everything (items, projects, orders, compartments, materials, settings) to one file. On the other machine, or in V4, use <b>Restore</b> on the same screen. V3 backups load into V4 with no conversion.</div></details>
+          <details><summary>What does the BOM export actually contain?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></summary><div class="a">Two options. An <b>order CSV</b> (comment, supplier part code, quantity, description) you can upload to your board house, and a <b>full CSV</b> with every field of every item for spreadsheets and backups. Both are read-only exports and never change your data. Items with no part code are counted and reported rather than silently dropped.</div></details>
+          <details><summary>Can I add my own categories?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></summary><div class="a">Yes, in V4. Settings, <b>Sidebar tabs</b>, add a custom tab with a name and image. It gets its own ID prefix. You can also hide any built-in tab you don't use; the items stay in the library and still show under All.</div></details>
+          <details><summary>Does scanning need the internet?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></summary><div class="a">No. Barcode reading runs on your PC. Any webcam works.</div></details>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2>Contact</h2>
+        <p><a href="https://discord.gg/n8M3V4SaHJ" target="_blank" rel="noopener">Discord</a> is fastest. Otherwise email <a href="mailto:PrintLab3D@outlook.com.au">PrintLab3D@outlook.com.au</a>. You'll also find PrintLab3D on <a href="https://www.youtube.com/@PrintLab3D000" target="_blank" rel="noopener">YouTube</a> and <a href="https://www.tiktok.com/@printlab3d64" target="_blank" rel="noopener">TikTok</a>.</p>
+      </section>
+
+    </article>
+  </div>
+</div></section>
+
+<script src="assets/js/site.js"></script>
+</body>
+</html>
