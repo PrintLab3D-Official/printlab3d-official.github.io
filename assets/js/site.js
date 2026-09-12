@@ -60,7 +60,8 @@ function header(){
           <a href="download.html"><span class="mi">${I.download}</span><div><b>Download V4</b><span>Windows. Free. Counting down to release.</span></div></a>
         </div></li>
       <li><a href="support.html">Support</a></li>
-      <li><a href="printlab3d.html">Content</a></li>`;
+      <li><a href="printlab3d.html">Content</a></li>
+      <li><a href="legal.html">Legal</a></li>`;
   const right=isContent
     ? `<a class="btn btn-ghost btn-sm cta hide-m" href="${LINKS.youtube}" target="_blank" rel="noopener">${I.youtube}YouTube</a>
     <a class="btn btn-blue btn-sm cta" href="printlab3d.html#contact">${I.mail}Contact</a>`
@@ -86,7 +87,7 @@ function footer(){
       <div><h5>Content</h5><a href="printlab3d.html">Videos</a><a href="${LINKS.youtube}" target="_blank" rel="noopener">YouTube</a><a href="${LINKS.tiktok}" target="_blank" rel="noopener">TikTok</a><a href="${LINKS.githubOrg}" target="_blank" rel="noopener">GitHub</a></div>
       <div><h5>Open source</h5><a href="${LINKS.github}" target="_blank" rel="noopener">Source code</a><a href="${LINKS.issues}" target="_blank" rel="noopener">Issues</a><a href="${LINKS.github}#readme" target="_blank" rel="noopener">Readme</a></div>
     </div>
-    <div class="fbot"><span>© ${new Date().getFullYear()} PrintLab3D. Parts Bin is free and open source.</span><span class="sp"></span>
+    <div class="fbot"><span>© ${new Date().getFullYear()} PrintLab3D. Parts Bin is free and open source.</span><a class="legal" href="legal.html">Legal and privacy</a><span class="sp"></span>
       <div class="ico"><a href="${LINKS.youtube}" target="_blank" rel="noopener" aria-label="YouTube">${I.youtube}</a><a href="${LINKS.tiktok}" target="_blank" rel="noopener" aria-label="TikTok">${I.tiktok}</a><a href="${LINKS.discord}" target="_blank" rel="noopener" aria-label="Discord">${I.discord}</a><a href="${LINKS.githubOrg}" target="_blank" rel="noopener" aria-label="GitHub">${I.github}</a></div>
     </div>
   </div></footer>
@@ -138,6 +139,7 @@ const INDEX=[
   {k:"Page",t:"Download",s:"V4 for Windows, counting down",h:"download.html"},
   {k:"Page",t:"Support",s:"Report a bug, install tutorial, FAQ",h:"support.html"},
   {k:"Page",t:"Content",s:"PrintLab3D videos, YouTube and TikTok",h:"printlab3d.html"},
+  {k:"Page",t:"Legal and privacy",s:"Disclaimer, what the app does and doesn't send, website terms",h:"legal.html"},
   {k:"Feature",t:"Assistant (AI)",s:"Sees your inventory, suggests projects, creates and edits items for you",h:"features.html#ai"},
   {k:"Feature",t:"Inventory",s:"Part IDs, photos, drawer location, stock steppers",h:"features.html#inventory"},
   {k:"Feature",t:"Compartments",s:"Map shelves and drawer cabinets, link parts to drawers",h:"features.html#compartments"},
@@ -152,6 +154,7 @@ const INDEX=[
   {k:"Help",t:"Install tutorial",s:"Step by step, including the Windows warning",h:"support.html#install"},
   {k:"Help",t:"Windows protected your PC?",s:"Why the SmartScreen box appears and what to click",h:"support.html#smartscreen"},
   {k:"Help",t:"Is my data uploaded anywhere?",s:"No. Everything stays on your PC",h:"support.html#faq"},
+  {k:"Help",t:"Where is my API key stored?",s:"On your PC only, in the app's data folder. See the privacy page",h:"legal.html#privacy"},
   {k:"Help",t:"Mac or Linux?",s:"Windows first. More support brings the others sooner",h:"support.html#faq"},
   {k:"Help",t:"I forgot my PIN",s:"Reset it with your Windows password. Nothing is lost",h:"support.html#pin"},
   {k:"Link",t:"Discord",s:"discord.gg/n8M3V4SaHJ",h:LINKS.discord,x:1},

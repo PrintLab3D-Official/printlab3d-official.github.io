@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Legal and privacy, Parts Bin</title>
+<meta name="description" content="The disclaimer for Parts Bin, what the app does and doesn't send anywhere, where your data and API key live on your PC, and the terms for this website.">
+<meta name="theme-color" content="#0d1117">
+<link rel="icon" href="favicon.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body data-page="legal">
+
+<section class="phero"><div class="wrap">
+  <span class="kicker">Legal and privacy</span>
+  <h1>The honest version.</h1>
+  <p>Three short things: a disclaimer, what Parts Bin does and doesn't send anywhere, and the terms for this website. Written by the maker, in plain English.</p>
+</div></section>
+
+<section class="sec tight"><div class="wrap">
+  <div class="docs">
+    <nav class="side" aria-label="On this page">
+      <h6>On this page</h6>
+      <a href="#disclaimer">Disclaimer</a>
+      <a href="#privacy">Privacy</a>
+      <a href="#terms">Website terms of use</a>
+      <h6>Elsewhere</h6>
+      <a href="support.html">Support</a>
+      <a href="https://discord.gg/n8M3V4SaHJ" target="_blank" rel="noopener">Discord</a>
+      <a href="https://github.com/PrintLab3D-Official/Part-bin" target="_blank" rel="noopener">Source code</a>
+    </nav>
+    <article>
+
+      <section id="disclaimer">
+        <h2>Disclaimer</h2>
+        <p>Parts Bin is provided as is, with no warranty of any kind. It is a free tool made by one person. It is tested on a real bench, but it can still have bugs.</p>
+        <p>Your data is your responsibility, and so are backups. The app makes it easy: Settings, Data and backup, Backup to file. Do that before big changes, and keep the file somewhere safe.</p>
+        <p>PrintLab3D is not liable for data loss, damage, or any other loss that comes from using the app or this website.</p>
+      </section>
+
+      <section id="privacy">
+        <h2>Privacy</h2>
+        <p>The short version: there are no accounts, no sign in, no telemetry and no analytics. Parts Bin does not collect usage data, crash reports or anything else about you. It does not check for updates and it does not contact any server on its own. Every time it goes online, it is because you asked it to. The details are below.</p>
+
+        <h3>Where your data lives</h3>
+        <p>Your inventory, projects, orders, compartments and settings are stored on your PC, in the app's own data folder:</p>
+        <p><code>%LOCALAPPDATA%\com.printlab3d.partsbin</code></p>
+        <p>The app never uploads any of it. A hidden recovery snapshot is written to the same folder on every save. When you make a backup, it is a single file that you choose where to save. Nothing is sent anywhere.</p>
+
+        <h3>Updates</h3>
+        <p>The app does not check for updates and does not phone home. The Check for updates button in Settings only opens the Releases page in your normal browser. You decide if and when to install a newer version.</p>
+
+        <h3>The assistant</h3>
+        <p>The app ships with no API key. The assistant does nothing until you either paste in your own key from an AI provider, or point the app at a model running locally on your own machine.</p>
+        <ul>
+          <li><b>If you use your own key</b>, the text you type into the assistant, plus a summary of your inventory and anything you told it to remember, is sent to whichever provider you configured. That provider handles it under its own terms and privacy policy, not ours.</li>
+          <li><b>If you use a local model</b>, the app talks to it on your own machine and nothing leaves your PC.</li>
+        </ul>
+        <p>Your key is saved with the rest of your settings, in the app's data folder at <code>%LOCALAPPDATA%\com.printlab3d.partsbin</code>. It is stored as plain text, not encrypted. That also means it is inside any backup file you make, along with your saved chats. Treat a backup file like a password: don't share it, and delete it when you no longer need it.</p>
+
+        <h3>Barcode scanning</h3>
+        <p>Scanning uses your webcam. The picture is read on your PC by a barcode library that is bundled inside the app. Camera frames are not saved and are not sent anywhere. Close the scanner and the camera is released.</p>
+
+        <h3>The only times the app goes online</h3>
+        <p>Each of these happens only when you click something. None of them happen in the background.</p>
+        <ul>
+          <li><b>Reorder links.</b> The Buy button opens the supplier's page in your normal browser. The app itself sends nothing. Order tracking numbers work the same way and open a parcel tracking site in your browser.</li>
+          <li><b>The assistant</b>, as described above.</li>
+          <li><b>Auto-fill on a part.</b> If you paste a supplier link and press Auto-fill, the app fetches that page to look for a picture and a price. If the supplier's site blocks that, the app tries again through a public proxy service, which means that service sees the address you pasted. Nothing else is sent.</li>
+          <li><b>Pictures from a link.</b> If you give a part a picture by pasting a web address, the app loads that picture from that address each time it shows the card.</li>
+          <li><b>The currency converter.</b> Opening the calculator downloads current exchange rates from a public rates service, at most once every 12 hours. Nothing about you is sent.</li>
+          <li><b>Links in Settings and Support</b>, such as Discord or this website, open in your browser.</li>
+        </ul>
+
+        <h3>This website</h3>
+        <p>This site sets no cookies and runs no analytics. It is static files served by GitHub Pages. The typeface is loaded from a public font service, so that service sees your browser's request for it, the same as any image on any website. The Content page shows video thumbnails and, if you press play, a YouTube player. Links out to GitHub, Discord and YouTube take you to services with their own policies.</p>
+
+        <h3>Removing all your data</h3>
+        <p>Settings has a Reset data button that empties every item, project, order and setting but leaves the app installed. To remove everything:</p>
+        <ol>
+          <li>Uninstall Parts Bin from Windows Settings, Apps, Installed apps.</li>
+          <li>Delete the folder <code>%LOCALAPPDATA%\com.printlab3d.partsbin</code>. Paste that into the File Explorer address bar to find it.</li>
+          <li>Delete any backup files you saved.</li>
+        </ol>
+        <p>That is all of it. There is nothing on a server to ask us to remove, because nothing was ever sent to one.</p>
+      </section>
+
+      <section id="terms">
+        <h2>Website terms of use</h2>
+        <p>This site is provided as is, for information about Parts Bin. It may be wrong or out of date, and it can change at any time.</p>
+        <p>Links to third party services, like GitHub, Discord and YouTube, are outside our control. What happens there is between you and them.</p>
+        <p>The content and branding on this site belong to PrintLab3D. The Parts Bin app itself is open source.</p>
+        <p>Questions about any of this? Ask on <a href="https://discord.gg/n8M3V4SaHJ" target="_blank" rel="noopener">Discord</a> or email <a href="mailto:PrintLab3D@outlook.com.au">PrintLab3D@outlook.com.au</a>.</p>
+      </section>
+
+    </article>
+  </div>
+</div></section>
+
+<script src="assets/js/site.js"></script>
+</body>
+</html>

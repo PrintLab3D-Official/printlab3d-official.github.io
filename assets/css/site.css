@@ -249,6 +249,7 @@ a.pill:hover{text-decoration:none;color:var(--txt);border-color:var(--line2)}
 @keyframes blink{50%{opacity:.3}}
 .dlcard .big{width:100%;height:56px;font-size:16px;border-radius:var(--rad)}
 .dlcard button.big{opacity:.55;cursor:not-allowed}
+.dlcard .agree{margin-top:10px;font-size:12.5px;color:var(--mut);line-height:1.5}
 .dlcard .meta{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:18px}
 .dlcard .meta div{font-size:13px;color:var(--mut);background:var(--bg);border:1px solid var(--line);padding:10px 12px;border-radius:10px}
 .dlcard .meta div b{display:block;color:var(--txt);font-size:14px}
@@ -335,6 +336,7 @@ footer .wrap{padding:54px 24px 30px}
 .fcols .about p{font-size:14px;color:var(--mut);max-width:300px;margin-top:10px;line-height:1.5}
 .fbot{display:flex;gap:16px;align-items:center;flex-wrap:wrap;margin-top:40px;padding-top:22px;border-top:1px solid var(--line);font-size:13px;color:var(--mut2)}
 .fbot .sp{flex:1}
+.fbot .legal{color:var(--mut)}.fbot .legal:hover{color:var(--txt);text-decoration:none}
 .fbot .ico{display:flex;gap:8px}
 .fbot .ico a{width:32px;height:32px;border-radius:8px;display:grid;place-items:center;color:var(--mut);border:1px solid var(--line)}
 .fbot .ico a:hover{color:var(--txt);border-color:var(--line2)}

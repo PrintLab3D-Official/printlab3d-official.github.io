@@ -13,6 +13,7 @@ Plain HTML, CSS and JavaScript. No build step, nothing to install. Edit a file, 
 | `download.html` | V4 for Windows with countdown, what's in V4, requirements, short install steps |
 | `support.html` | Help centre: report a bug (on Discord, with a copyable template), request a feature, install tutorial, the Windows warning, forgot-your-PIN, FAQ, contact |
 | `printlab3d.html` | Content: the PrintLab3D channel with its own header (logo, Videos, Contact), videos, the story, contact |
+| `legal.html` | Disclaimer, privacy (what the app does and doesn't send, where data and the API key live), website terms. Linked from the footer only |
 
 Shared bits live in `assets/`:
 
@@ -29,6 +30,7 @@ Shared bits live in `assets/`:
 - **Put real photos on the part cards:** save the photo as `assets/img/capacitor.jpg` (or whatever) and, in the card, replace the whole `<div class="ex">...</div>` block with `<img src="assets/img/capacitor.jpg" alt="100nF capacitor">`. The cards are in `features.html` (capacitor) and `printlab3d.html` (resistor).
 - **Add a YouTube video:** copy one of the `.ytc` cards in `printlab3d.html`; thumbnails come from `https://i.ytimg.com/vi/VIDEO_ID/maxresdefault.jpg`.
 - **Add a search-palette entry:** add a row to the `INDEX` array in `site.js`.
+- **Change the legal or privacy wording:** edit `legal.html`. Every claim on it was checked against the app's code, so if the app starts sending something new (or stops), update the "The only times the app goes online" list. It is linked from the header nav (Legal), the footer, and the "By downloading" line under the Download button on `download.html`.
 - **Add or reorder presets:** the `PRESETS` array in `site.js`. Values are copied from the app's `web/css/styles-presets.css`.
 
 `.nojekyll` tells GitHub Pages to serve the files exactly as they are. Keep it.
