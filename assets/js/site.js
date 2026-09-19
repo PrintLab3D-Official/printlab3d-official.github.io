@@ -194,9 +194,19 @@ if(DBG.has("top")){document.body.style.marginTop=(-DBG.get("top"))+"px";}
 $$(".rv").forEach(el=>el.classList.add("in"));
 
 /* ---------- release day: swap the disabled Download button for the real link ---------- */
+/* The installer itself. Set this to the file's path once it is uploaded (for
+   example "downloads/Parts-Bin-4.0.0-setup.exe" hosted with this site); while it
+   is empty the button opens the Releases page instead. */
+const DOWNLOAD_URL="downloads/Parts-Bin-4.0.0-setup.exe";
 function releaseDay(){
   const b=$("#dlBtn");if(!b||b.dataset.live)return;b.dataset.live="1";
-  const a=document.createElement("a");a.className="btn btn-green big";a.href=LINKS.github+"/releases/latest";a.target="_blank";a.rel="noopener";a.innerHTML=b.innerHTML;
+  const a=document.createElement("a");a.className="btn btn-green big";a.innerHTML=b.innerHTML;
+  const useReleases=()=>{a.href=LINKS.github+"/releases/latest";a.target="_blank";a.rel="noopener";a.removeAttribute("download");};
+  if(DOWNLOAD_URL){
+    a.href=DOWNLOAD_URL;a.setAttribute("download","");
+    /* The file is uploaded at release time; until it is there, send people to the Releases page. */
+    fetch(DOWNLOAD_URL,{method:"HEAD",cache:"no-store"}).then(r=>{if(!r.ok)useReleases();}).catch(useReleases);
+  }else useReleases();
   b.replaceWith(a);const soon=$(".dlcard .soon");if(soon)soon.remove();
 }
 if(RELEASE-Date.now()<=0)releaseDay();
